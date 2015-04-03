@@ -1,0 +1,589 @@
+<!doctype html>
+<!--[if lt IE 8]><html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9 oldie" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <title>vi /vim graphical cheat sheet</title>
+        <link href="styles.css" media="all" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>vi / vim graphical cheat sheet</h1>
+
+        <div class="keyboard">
+
+            <!-- ROW 1 -->
+            <div class="row row-1">
+                <div class="key command esc">
+                    <label>Esc</label>
+                    <span>normal mode</span>
+                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row row-2">
+                <div class="key">
+                    <div class="shift command">
+                        <label>~</label>
+                        <span>toggle case</span>
+                    </div>
+                    <div class="motion">
+                        <label>`.</label>
+                        <span>goto mark</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift operator">
+                        <label>!</label>
+                        <span>external filter</span>
+                    </div>
+                    <div class="extra">
+                        <label>1</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>@.</label>
+                        <span>play macro</span>
+                    </div>
+                    <div class="extra">
+                        <label>2</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>#</label>
+                        <span>prev ident</span>
+                    </div>
+                    <div class="extra">
+                        <label>3</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>$</label>
+                        <span>eol</span>
+                    </div>
+                    <div class="extra">
+                        <label>4</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>%</label>
+                        <span>goto match</span>
+                    </div>
+                    <div class="extra">
+                        <label>5</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>^</label>
+                        <span>"soft" bol</span>
+                    </div>
+                    <div class="extra">
+                        <label>6</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>&amp;</label>
+                        <span>repeat :s</span>
+                    </div>
+                    <div class="extra">
+                        <label>7</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>*</label>
+                        <span>next ident</span>
+                    </div>
+                    <div class="extra">
+                        <label>8</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>(</label>
+                        <span>begin sentence</span>
+                    </div>
+                    <div class="extra">
+                        <label>9</label>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>)</label>
+                        <span>end sentence</span>
+                    </div>
+                    <div class="motion">
+                        <label>0</label>
+                        <span>"hard" bol</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>_</label>
+                        <span>"soft" bol down</span>
+                    </div>
+                    <div class="motion">
+                        <label>-</label>
+                        <span>prev line</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>+</label>
+                        <span>next line</span>
+                    </div>
+                    <div class="operator">
+                        <label>=</label>
+                        <span>auto format</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="row row-3">
+                <div class="key key-tab">
+                    <label>Tab</label>
+                    <span></span>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>Q</label>
+                        <span>ex mode</span>
+                    </div>
+                    <div class="command">
+                        <label>q.</label>
+                        <span>record macro</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>W</label>
+                        <span>NEXT WORD</span>
+                    </div>
+                    <div class="motion">
+                        <label>w</label>
+                        <span>next word</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>E</label>
+                        <span>end WORD</span>
+                    </div>
+                    <div class="motion">
+                        <label>e</label>
+                        <span>end word</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label class="insert">R</label>
+                        <span>replace mode</span>
+                    </div>
+                    <div class="command">
+                        <label>r</label>
+                        <span>replace char</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>T</label>
+                        <span>back 'till</span>
+                    </div>
+                    <div class="motion">
+                        <label>t</label>
+                        <span>'till</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>Y</label>
+                        <span>yank line</span>
+                    </div>
+                    <div class="operator">
+                        <label>y</label>
+                        <span>yank</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>U</label>
+                        <span>undo line</span>
+                    </div>
+                    <div class="command">
+                        <label>u</label>
+                        <span>undo</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label class="insert">I</label>
+                        <span>insert at bol</span>
+                    </div>
+                    <div class="command">
+                        <label class="insert">i</label>
+                        <span>insert mode</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label class="insert">O</label>
+                        <span>open above</span>
+                    </div>
+                    <div class="command">
+                        <label class="insert">o</label>
+                        <span>open below</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>P</label>
+                        <span>paste before</span>
+                    </div>
+                    <div class="command">
+                        <label>p</label>
+                        <span>paste after</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>{</label>
+                        <span>begin parag.</span>
+                    </div>
+                    <div class="motion">
+                        <label>[.</label>
+                        <span>misc</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>}</label>
+                        <span>end parag.</span>
+                    </div>
+                    <div class="motion">
+                        <label>].</label>
+                        <span>misc</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW -->
+            <div class="row row-4">
+                <div class="key key-caps">
+                    <label>Caps</label>
+                    <span></span>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label class="insert">A</label>
+                        <span>append at eol</span>
+                    </div>
+                    <div class="command">
+                        <label class="insert">a</label>
+                        <span>append</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label class="insert">S</label>
+                        <span>subst line</span>
+                    </div>
+                    <div class="command">
+                        <label class="insert">s</label>
+                        <span>subst char</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>D</label>
+                        <span>delete to eol</span>
+                    </div>
+                    <div class="operator">
+                        <label>d</label>
+                        <span>delete</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>F</label>
+                        <span>"back" find char</span>
+                    </div>
+                    <div class="motion">
+                        <label>f.</label>
+                        <span>find char</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>G</label>
+                        <span>eof/ goto ln</span>
+                    </div>
+                    <div class="extra">
+                        <label>g.</label>
+                        <span>extra cmds</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>H</label>
+                        <span>screen top</span>
+                    </div>
+                    <div class="motion">
+                        <label>h</label>
+                        <span>cursor left</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>J</label>
+                        <span>join lines</span>
+                    </div>
+                    <div class="motion">
+                        <label>j</label>
+                        <span>cursor down</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>K</label>
+                        <span>help</span>
+                    </div>
+                    <div class="motion">
+                        <label>k</label>
+                        <span>cursor up</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>L</label>
+                        <span>screen bottom</span>
+                    </div>
+                    <div class="motion">
+                        <label>l</label>
+                        <span>cursor right</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>:</label>
+                        <span>ex cmd line</span>
+                    </div>
+                    <div class="motion">
+                        <label>;</label>
+                        <span>repeat t/T/f/F</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift extra">
+                        <label>".</label>
+                        <span>reg spec</span>
+                    </div>
+                    <div class="motion">
+                        <label>'.</label>
+                        <span>goto mk. bol</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>|</label>
+                        <span>bol/goto col</span>
+                    </div>
+                    <div class="extra">
+                        <label>\.</label>
+                        <span>not used!</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW -->
+            <div class="row row-5">
+                <div class="key key-shift">
+                    <label>Shift</label>
+                    <span></span>
+                </div>
+                <div class="key">
+                    <div class="shift extra">
+                        <label>Z</label>
+                        <span>quit</span>
+                    </div>
+                    <div class="extra">
+                        <label>z</label>
+                        <span>extra cmds</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>X</label>
+                        <span>backspace</span>
+                    </div>
+                    <div class="command">
+                        <label>x</label>
+                        <span>delete char</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label class="insert">C</label>
+                        <span>change to eol</span>
+                    </div>
+                    <div class="operator">
+                        <label class="insert">c</label>
+                        <span>change</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift command">
+                        <label>V</label>
+                        <span>visual lines</span>
+                    </div>
+                    <div class="command">
+                        <label>v</label>
+                        <span>visual mode</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>B</label>
+                        <span>prev WORD</span>
+                    </div>
+                    <div class="motion">
+                        <label>b</label>
+                        <span>prev word</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>N</label>
+                        <span>prev (find)</span>
+                    </div>
+                    <div class="motion">
+                        <label>n</label>
+                        <span>next (find)</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>M</label>
+                        <span>screen mid</span>
+                    </div>
+                    <div class="command">
+                        <label>m.</label>
+                        <span>set mark</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift operator">
+                        <label>&lt;</label>
+                        <span>un-indent</span>
+                    </div>
+                    <div class="motion">
+                        <label>,</label>
+                        <span>reverse t/T/f/F</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift operator">
+                        <label>&gt;</label>
+                        <span>ident</span>
+                    </div>
+                    <div class="command">
+                        <label>.</label>
+                        <span>repeat cmd</span>
+                    </div>
+                </div>
+                <div class="key">
+                    <div class="shift motion">
+                        <label>?</label>
+                        <span>find (rev.)</span>
+                    </div>
+                    <div class="motion">
+                        <label>/</label>
+                        <span>find</span>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </body>
+    </html>

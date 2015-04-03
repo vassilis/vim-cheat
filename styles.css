@@ -1,0 +1,99 @@
+
+@import url("normalize.css");
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #FFF;
+    color: #222;
+    font: 100% sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font: 2em/1 monospace;
+    margin-bottom: 50px;
+}
+
+.keyboard {
+    width: 1240px;
+    margin: 50px auto;
+}
+
+.row {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+.key {
+    width: 80px;
+    height: 80px;
+    float: left;
+    border: 2px #222 solid;
+    border-radius: 7px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.key-esc {
+}
+
+.key-tab {
+    width: 126px;
+}
+
+.key-caps {
+    width: 150px;
+}
+
+.key-shift {
+    width : 184px;
+}
+
+.key > div {
+    height: 50%;
+}
+
+.key .shift {
+    border-bottom: 1px #222 solid;
+}
+
+.key label {
+    display: inline-block;
+    font-size: 1.5em;
+    float: left;
+    margin: 5px;
+}
+
+.key label.insert {
+    color: red;
+}
+
+.key span {
+    font-size: .7em;
+    display: block;
+    text-align: right;
+    padding: 5px;
+}
+
+.motion {
+    background-color: #6BFE6A;
+}
+
+.command {
+    background-color: #FEFE6A;
+}
+
+.operator {
+    background-color: #FEAD1F;
+}
+
+.extra {
+    background-color: #EDEDED;
+}
