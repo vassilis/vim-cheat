@@ -42,10 +42,15 @@ body {
     width: 87px;
     height: 87px;
     float: left;
-    border: 2px #222 solid;
+    border: 2px #999 solid;
     border-radius: 10px;
     margin: 4px;
     overflow: hidden;
+}
+
+.key.disabled {
+    opacity: .3;
+    color: #999;
 }
 
 .key-esc {
@@ -68,7 +73,6 @@ body {
 }
 
 .key .shift {
-    border-bottom: 1px #222 solid;
     display: none;
 }
 
@@ -104,4 +108,12 @@ body {
 
 .extra {
     background-color: #EDEDED;
+}
+
+.shift_is_pressed .normal {
+    display: none;
+}
+
+.shift_is_pressed .shift {
+    display: block;
 }
