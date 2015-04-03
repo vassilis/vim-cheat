@@ -110,10 +110,23 @@ body {
     background-color: #EDEDED;
 }
 
-.shift_is_pressed .normal {
+.shift-pressed .normal {
     display: none;
 }
 
-.shift_is_pressed .shift {
+.shift-pressed .shift {
     display: block;
+}
+
+.shift-pressed .key-shift {
+    background-color: #AAA;
+    color: #FFF;
+}
+
+.key-pressed .key {
+        opacity: .3;
+}
+
+.key.pressed {
+        opacity: 1;
 }
