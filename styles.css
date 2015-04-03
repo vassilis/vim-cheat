@@ -14,16 +14,23 @@ body {
     font: 100% sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font: 2em/1 monospace;
-    margin-bottom: 50px;
+.keyboard {
+    width: 1300px;
+    margin: 100px auto;
+    position: relative;
+    background: #FAFAFA;
+    border-radius: 10px;
 }
 
-.keyboard {
-    width: 1240px;
-    margin: 50px auto;
+.keyboard h1 {
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font: bold 1em/1 monospace;
+    color: #999;
 }
+
 
 .row {
     margin-bottom: 10px;
@@ -32,12 +39,12 @@ h1 {
 
 
 .key {
-    width: 80px;
-    height: 80px;
+    width: 87px;
+    height: 87px;
     float: left;
     border: 2px #222 solid;
-    border-radius: 7px;
-    margin: 5px;
+    border-radius: 10px;
+    margin: 4px;
     overflow: hidden;
 }
 
@@ -57,11 +64,12 @@ h1 {
 }
 
 .key > div {
-    height: 50%;
+    height: 100%;
 }
 
 .key .shift {
     border-bottom: 1px #222 solid;
+    display: none;
 }
 
 .key label {
