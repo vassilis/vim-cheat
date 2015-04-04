@@ -2,131 +2,131 @@
 @import url("normalize.css");
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background: #FFF;
-    color: #222;
-    font: 100% sans-serif;
+  margin: 0;
+  background: #FFF;
+  color: #222;
+  font: 100% sans-serif;
 }
 
 .keyboard {
-    width: 1300px;
-    margin: 100px auto;
-    position: relative;
-    background: #FAFAFA;
-    border-radius: 10px;
+  width: 1300px;
+  margin: 100px auto;
+  position: relative;
+  background: #FAFAFA;
+  border-radius: 10px;
 }
 
 .keyboard h1 {
-    margin: 0;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font: bold 1em/1 monospace;
-    color: #999;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font: bold 1em/1 monospace;
+  color: #999;
 }
 
 
 .row {
-    margin-bottom: 10px;
-    overflow: hidden;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
 
 .key {
-    width: 87px;
-    height: 87px;
-    float: left;
-    border: 2px #999 solid;
-    border-radius: 10px;
-    margin: 4px;
-    overflow: hidden;
+  width: 87px;
+  height: 87px;
+  float: left;
+  border: 2px #999 solid;
+  border-radius: 10px;
+  margin: 4px;
+  overflow: hidden;
 }
 
 .key.disabled {
-    opacity: .3;
-    color: #999;
+  opacity: .3;
+  color: #999;
 }
 
 .key-esc {
 }
 
 .key-tab {
-    width: 126px;
+  width: 126px;
 }
 
 .key-caps {
-    width: 150px;
+  width: 150px;
 }
 
 .key-shift {
-    width : 184px;
+  width : 184px;
 }
 
 .key > div {
-    height: 100%;
+  height: 100%;
 }
 
 .key .shift {
-    display: none;
+  display: none;
 }
 
 .key label {
-    display: inline-block;
-    font-size: 1.5em;
-    float: left;
-    margin: 5px;
+  display: inline-block;
+  font-size: 1.5em;
+  float: left;
+  margin: 5px;
 }
 
 .key label.insert {
-    color: red;
+  color: red;
 }
 
 .key span {
-    font-size: .7em;
-    display: block;
-    text-align: right;
-    padding: 5px;
+  font-size: .7em;
+  display: block;
+  text-align: right;
+  padding: 5px;
 }
 
 .motion {
-    background-color: #6BFE6A;
+  background-color: #6BFE6A;
 }
 
 .command {
-    background-color: #FEFE6A;
+  background-color: #FEFE6A;
 }
 
 .operator {
-    background-color: #FEAD1F;
+  background-color: #FEAD1F;
 }
 
 .extra {
-    background-color: #EDEDED;
+  background-color: #EDEDED;
 }
 
 .shift-pressed .normal {
-    display: none;
+  display: none;
 }
 
 .shift-pressed .shift {
-    display: block;
+  display: block;
 }
 
 .shift-pressed .key-shift {
-    background-color: #AAA;
-    color: #FFF;
+  background-color: #AAA;
+  color: #FFF;
 }
 
 .key-pressed .key {
-        opacity: .3;
+  opacity: .3;
 }
 
 .key.pressed {
-        opacity: 1;
+  opacity: 1;
 }
