@@ -130,3 +130,8 @@ body {
 .key.pressed {
   opacity: 1;
 }
+
+.key .arrow {
+  line-height: 1;
+  font-size: 3em;
+}
