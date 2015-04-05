@@ -8,7 +8,7 @@ el.addEventListener("keydown", onkeydown, true);
 el.addEventListener("keyup", onkeyup, true);
 
 function onkeydown(e) {
-  console.log(e.which);
+  // console.log(e.which);
   var key_pressed = el.getElementById("key-" + e.which);
   if (key_pressed !== null) {
     $body.classList.add("key-pressed");
@@ -16,7 +16,10 @@ function onkeydown(e) {
   }
   if (e.shiftKey) {
     $body.classList.add("shift-pressed");
-  } 
+  }
+  if (e.which == 32) {
+    toggle_colors();
+  }
 }
 
 function onkeyup(e) {
@@ -31,4 +34,9 @@ function onkeyup(e) {
       $body.classList.remove("key-pressed");
     }
   }
+}
+
+function toggle_colors() {
+  $body.classList.toggle("vim-colors");
+  $body.classList.toggle("tt-colors");
 }

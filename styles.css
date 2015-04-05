@@ -94,24 +94,48 @@ body {
   padding: 5px;
 }
 
-.motion {
+.vim-colors .motion {
   background-color: #6BFE6A;
 }
 
-.command {
+.vim-colors .command {
   background-color: #FEFE6A;
 }
 
-.operator {
+.vim-colors .operator {
   background-color: #FEAD1F;
 }
 
-.extra {
+.vim-colors .extra {
   background-color: #EDEDED;
 }
 
-.shift-pressed .normal {
+.vim-colors .shift-pressed .normal {
   display: none;
+}
+
+.tt-colors .tt-ju.tt-left { /* Ju – Jupiter or index finger */
+  background-color: #FFBD76;
+}
+
+.tt-colors .tt-ju.tt-right { /* Ju – Jupiter or index finger */
+  background-color: #FFEE7E;
+}
+
+.tt-colors .tt-sa { /* Sa - Saturn or middle finger */
+  background-color: #F69EC4;
+}
+
+.tt-colors .tt-ap { /* Ap - Apollo or ring finger */
+  background-color: #63E3FF;
+}
+
+.tt-colors .tt-me { /* Me - Mercury or little finger */
+  background-color: #78E2AA;
+}
+
+.tt-colors .tt-thumb { /* The thumb */
+  background-color: #EDEDED;
 }
 
 .shift-pressed .shift {
