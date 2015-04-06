@@ -8,7 +8,7 @@ el.addEventListener("keydown", onkeydown, true);
 el.addEventListener("keyup", onkeyup, true);
 
 function onkeydown(e) {
-  // console.log(e.which);
+  console.log(e.which);
   var key_pressed = el.getElementById("key-" + e.which);
   if (key_pressed !== null) {
     $body.classList.add("key-pressed");
@@ -19,6 +19,13 @@ function onkeydown(e) {
   }
   if (e.which == 32) {
     toggle_colors();
+  }
+  if (e.which == 20) {
+    if ($body.classList.contains("shift-pressed")) {
+        $body.classList.remove("shift-pressed");
+    } else {
+        $body.classList.add("shift-pressed");
+    }
   }
 }
 
